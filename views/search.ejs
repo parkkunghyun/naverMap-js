@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=t61ojxw8ra&submodules=geocoder"></script>
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        <input type="text" placeholder="ex) 서울 맛집" name="title">
+        <button type="submit">검색!!</button>
+    </form>
+    <div id="map" style="width:1000px;height:500px;"></div>
+    <script>
+        var mapOptions = {
+            center: new naver.maps.LatLng(37.3595704, 127.105399),
+            zoom: 15
+        };
+        
+        var map = new naver.maps.Map('map', mapOptions);
+        </script>
+</body>
+</html>
